@@ -1,0 +1,46 @@
+.reset-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav{
+  width: 320px;
+  margin: 0 auto;
+}
+.main-nav__list{
+  .reset-list();
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav{
+    width: auto;
+    margin: 0;
+  }
+  .main-nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    /*640 потому-что ширина меню 570 + место на иконку 60 пкс + 10 пикс на запас  */
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .site-list{
+    width: 570px;
+  }
+  .user-list{
+    width: 60px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper{
+    width: 960px;
+  }
+  .site-list{
+    width: 780px;
+  }
+  .user-list{
+    width: 160px;
+  }
+
+}
