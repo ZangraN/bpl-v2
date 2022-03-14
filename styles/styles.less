@@ -1,8 +1,38 @@
 @import "outlines";
 @import "variables";
 @import "scafolding";
-@import "blocks/page-header";
 @import "blocks/main-nav";
+@import "blocks/page-header";
+@import "blocks/stats";
 @import "site-list";
 @import "user-list";
+@import "mixins";
 
+.block-mock:nth-of-type(1) {
+  .mock(50px);
+}
+
+
+@media (min-width: @tablet-width) {
+  .block-mock:nth-of-type(1) {
+    .mock(300px);
+  }
+}
+
+.block-mock:nth-last-of-type(1) {
+  .mock(400px);
+}
+
+
+.nav-mock {
+  min-height: 310px;
+}
+@media (min-width: @tablet-width) {
+
+  .nav-mock {
+    min-height: 72px;
+  }
+}
+.block-mock:nth-last-of-type(1) {
+  .mock(400px);
+}

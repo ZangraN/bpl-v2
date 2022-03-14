@@ -34,6 +34,7 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
+    display: flex;
     flex-wrap: wrap;
     /* justify-content: flex-start; */
     justify-content: space-between;
@@ -49,7 +50,7 @@
       margin-right: 0;
     }
 
-    &--active {
+    &_active {
       position: relative;
 
       &::after {
@@ -101,7 +102,7 @@
   .site-list__item {
     margin-right: 0;
 
-    &--active::after {
+    &_active::after {
       right: 30px;
       left: 30px;
     }
